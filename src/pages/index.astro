@@ -1,0 +1,14 @@
+---
+import Layout from '@layouts/Layout.astro'
+
+import Footer from '@components/landing/Footer.astro'
+import Hero from '@components/landing/Hero.astro'
+
+const title = 'Welcome to the Space, astronaut! 🚀'
+const description =
+  'Space helps you build your personal link orbit with all your social profiles, affiliate links, and anything you want to share in one place!'
+---
+<Layout title={title} description={description}>
+  <Hero/>
+  <Footer/>
+</Layout>

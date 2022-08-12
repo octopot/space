@@ -1,0 +1,19 @@
+---
+interface Props {
+  canonical: string;
+  timeout?: number;
+}
+
+const {canonical, timeout = 0} = Astro.props
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content={`${timeout}; url=${canonical}`}>
+  <title>Redirecting...</title>
+  <link rel="canonical" href={canonical}>
+</head>
+<body>
+</body>
+</html>

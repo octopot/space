@@ -1,0 +1,23 @@
+---
+import Icon from '@components/icons/GetMentor.astro'
+import Pointer from '@components/user/Pointer.astro'
+---
+<div class="bg-white hover:bg-inherit p-6 relative">
+  <div>
+    <span class="inline-flex rounded-lg p-3 bg-indigo-50 text-indigo-700 ring-4 ring-white">
+      <Icon class="h-8 w-8"/>
+    </span>
+  </div>
+  <div class="mt-8">
+    <h3 class="text-base font-semibold leading-6 text-gray-900">
+      <a href="/kamilsk/getmentor/" class="focus:outline-none">
+        <span class="absolute inset-0" aria-hidden="true"></span>
+        Mentoring
+      </a>
+    </h3>
+    <p class="mt-2 text-sm text-gray-500">
+      I have some experience and can help you with your career.
+    </p>
+  </div>
+  <Pointer/>
+</div>

@@ -1,0 +1,41 @@
+---
+import Layout from '@layouts/Layout.astro'
+
+import Cal from '@components/user/Cal.com.astro'
+import GetMentor from '@components/user/GetMentor.astro'
+import GitHub from '@components/user/GitHub.astro'
+import LinkedIn from '@components/user/LinkedIn.astro'
+import Telegram from '@components/user/Telegram.astro'
+import Twitter from '@components/user/Twitter.astro'
+
+import astronaut from '@assets/kamilsk.jpg'
+
+const title = 'Kamil Samigullin'
+const description =
+  'A micro-entrepreneur and founder of OctoLab, a creator of LifeOS, Sparkle, and Tact, an open-source enthusiast and mentor.'
+---
+<Layout title={title} description={description}>
+  <div class="flex items-center justify-center h-screen">
+    <div class="bg-white divide-y divide-gray-200 max-w-screen-sm rounded-lg">
+      <div class="flex flex-1 flex-col p-8 text-center">
+        <img src={astronaut.src} alt={title}
+             class="mx-auto h-32 w-32 flex-shrink-0 rounded-full">
+        <h3 class="mt-6 text-sm font-medium text-gray-900">{title}</h3>
+        <dl class="mt-1 flex flex-grow flex-col justify-between">
+          <dt class="sr-only">Description</dt>
+          <dd class="text-sm text-gray-500">{description}</dd>
+        </dl>
+      </div>
+      <div>
+        <div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+          <GitHub/>
+          <LinkedIn/>
+          <Telegram/>
+          <Twitter/>
+          <Cal/>
+          <GetMentor/>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
