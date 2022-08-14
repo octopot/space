@@ -44,8 +44,8 @@ jobs:
       - name: Build the application
         run: npm run build
       - name: Upload the site
-        uses: actions/upload-artifact@v3.1.3
-        with: { path: dist, if-no-files-found: error }
+        uses: actions/upload-pages-artifact@v2.0.0
+        with: { path: dist }
 
   deploy:
     name: Deploying
