@@ -10,6 +10,11 @@ console.log(__dirname)
 import redirects from './redirects.json' assert { type: 'json' };
 
 for (const [context, links] of Object.entries(redirects)) {
+  // todo: support nested contexts with index.astro generation
+  if (context === 'startup-loser') {
+    continue;
+  }
+
   const dirPath = join('src', 'pages', context);
   if (!existsSync(dirPath)) {
     mkdirSync(dirPath, {recursive: true});
