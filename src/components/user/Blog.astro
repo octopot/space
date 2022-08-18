@@ -1,28 +1,22 @@
 ---
-import Icon from '@components/icons/Twitter.astro'
+import Icon from '@components/icons/Blog.astro'
 import Pointer from '@components/user/Pointer.astro'
-
-interface Props {
-  href: string
-}
-
-const {href} = Astro.props
 ---
 <div class="bg-white hover:bg-inherit p-6 relative">
   <div>
-    <span class="inline-flex rounded-lg p-3 bg-blue-500 text-white ring-4 ring-white">
+    <span class="inline-flex rounded-lg p-3 bg-gray-100 text-gray-800 ring-4 ring-white">
       <Icon class="h-8 w-8 fill-current"/>
     </span>
   </div>
   <div class="mt-8">
     <h3 class="text-base font-semibold leading-6 text-gray-900">
-      <a href={href} class="focus:outline-none">
+      <a href="/kamilsk/startup-loser/blog/" class="focus:outline-none">
         <span class="absolute inset-0" aria-hidden="true"></span>
-        Twitter
+        How I Live
       </a>
     </h3>
     <p class="mt-2 text-sm text-gray-500">
-      News feed and announcements.
+      Personal blog for reading over a cup of tea.
     </p>
   </div>
   <Pointer/>

@@ -1,8 +1,12 @@
 ---
 import Layout from '@layouts/Layout.astro'
 
+import Blog from '@components/user/Blog.astro'
+import Instagram from '@components/user/Instagram.astro'
 import Telegram from '@components/user/Telegram.astro'
+import TikTok from '@components/user/TikTok.astro'
 import Twitter from '@components/user/Twitter.astro'
+import YouTube from '@components/user/YouTube.astro'
 
 import astronaut from '@assets/kamilsk.jpg'
 
@@ -14,6 +18,9 @@ const description =
   <div class="flex items-center justify-center h-screen">
     <div class="bg-white divide-y divide-gray-200 max-w-screen-sm rounded-lg">
       <div class="flex flex-1 flex-col p-8 text-center">
+        <a href="/kamilsk/" class="absolute px-3 py-2 text-sm font-medium text-gray-800">
+          &larr; Back
+        </a>
         <img src={astronaut.src} alt={title}
              class="mx-auto h-32 w-32 flex-shrink-0 rounded-full">
         <h3 class="mt-6 text-sm font-medium text-gray-900">{title}</h3>
@@ -26,8 +33,13 @@ const description =
         <div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
           <Telegram
             href="/kamilsk/startup-loser/telegram/"
-            topic="My story on channel."/>
-          <Twitter/>
+            topic="Stream of consciousness and short notes."/>
+          <Twitter
+            href="/kamilsk/startup-loser/twitter/"/>
+          <Instagram/>
+          <TikTok/>
+          <YouTube/>
+          <Blog/>
         </div>
       </div>
     </div>
