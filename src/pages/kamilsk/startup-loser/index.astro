@@ -1,18 +1,14 @@
 ---
 import Layout from '@layouts/Layout.astro'
 
-import Cal from '@components/user/Cal.com.astro'
-import GetMentor from '@components/user/GetMentor.astro'
-import GitHub from '@components/user/GitHub.astro'
-import LinkedIn from '@components/user/LinkedIn.astro'
-import StartupLoser from '@components/user/StartupLoser.astro'
 import Telegram from '@components/user/Telegram.astro'
+import Twitter from '@components/user/Twitter.astro'
 
 import astronaut from '@assets/kamilsk.jpg'
 
-const title = 'Kamil Samigullin'
+const title = 'Startup-loser'
 const description =
-  'A micro-entrepreneur and founder of OctoLab, a creator of LifeOS, Sparkle, and Tact, an open-source enthusiast and mentor.'
+  'My story of starting startups. Failures, mistakes, lessons.'
 ---
 <Layout title={title} description={description}>
   <div class="flex items-center justify-center h-screen">
@@ -28,14 +24,10 @@ const description =
       </div>
       <div>
         <div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
-          <GitHub/>
-          <LinkedIn/>
           <Telegram
-            href="/kamilsk/telegram/"
-            topic="My favorite messenger, where we can discuss your questions."/>
-          <StartupLoser/>
-          <GetMentor/>
-          <Cal/>
+            href="/kamilsk/startup-loser/telegram/"
+            topic="My story on channel."/>
+          <Twitter/>
         </div>
       </div>
     </div>

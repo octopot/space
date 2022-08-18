@@ -1,6 +1,13 @@
 ---
 import Icon from '@components/icons/Telegram.astro'
 import Pointer from '@components/user/Pointer.astro'
+
+interface Props {
+  href?: string
+  topic?: string
+}
+
+const {href, topic} = Astro.props
 ---
 <div class="bg-white hover:bg-inherit p-6 relative">
   <div>
@@ -10,14 +17,12 @@ import Pointer from '@components/user/Pointer.astro'
   </div>
   <div class="mt-8">
     <h3 class="text-base font-semibold leading-6 text-gray-900">
-      <a href="/kamilsk/telegram/" class="focus:outline-none">
+      <a href={href} class="focus:outline-none">
         <span class="absolute inset-0" aria-hidden="true"></span>
         Telegram
       </a>
     </h3>
-    <p class="mt-2 text-sm text-gray-500">
-      My favorite messenger, where we can discuss your questions.
-    </p>
+    <p class="mt-2 text-sm text-gray-500">{topic}</p>
   </div>
   <Pointer/>
 </div>
