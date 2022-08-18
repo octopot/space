@@ -10,17 +10,17 @@ console.log(__dirname)
 import redirects from './redirects.json' assert { type: 'json' };
 
 for (const [context, links] of Object.entries(redirects)) {
-  // todo: support nested contexts with index.astro generation
-  if (context === 'startup-loser') {
-    continue;
-  }
-
   const dirPath = join('src', 'pages', context);
   if (!existsSync(dirPath)) {
     mkdirSync(dirPath, {recursive: true});
   }
 
   for (const [file, url] of Object.entries(links)) {
+    // todo: support nested contexts with index.astro generation
+    if (file === 'startup-loser') {
+      continue;
+    }
+
     const filePath = join(dirPath, `${file}.astro`);
     const fileContent = `---
 import Layout from '@layouts/Redirect.astro'
