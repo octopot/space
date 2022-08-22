@@ -1,5 +1,7 @@
 ---
 import preview from '@assets/blurred.png'
+
+const join = 'https://form.typeform.com/to/XPfe0A8G'
 ---
 <div class="bg-gray-900">
   <header class="absolute inset-x-0 top-0 z-50">
@@ -13,7 +15,7 @@ import preview from '@assets/blurred.png'
         </a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="https://form.typeform.com/to/XPfe0A8G"
+        <a href={join}
            class="text-sm font-semibold leading-6 text-white">
           Join to waiting list <span aria-hidden="true">&rarr;</span>
         </a>
@@ -39,6 +41,10 @@ import preview from '@assets/blurred.png'
             with all your social profiles, affiliate links, and anything<br>
             you need to share with your audience in one place and full control!
           </p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a href={join} class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
+            <a href="/kamilsk/" class="text-sm font-semibold leading-6 text-white">See an example <span aria-hidden="true">→</span></a>
+          </div>
         </div>
         <img src={preview.src} alt="Interface screenshot"
              width="2432" height="1442"
