@@ -15,16 +15,16 @@ const description =
   'My story of starting startups. Failures, mistakes, lessons.'
 ---
 <Layout title={title} description={description}>
-  <div class="flex items-center justify-center h-screen">
+  <div class="sm:flex sm:items-center sm:justify-center sm:h-screen">
     <div class="bg-white divide-y divide-gray-200 max-w-screen-sm rounded-lg">
       <div class="flex flex-1 flex-col p-8 text-center">
         <a href="/kamilsk/" class="absolute px-3 py-2 text-sm font-medium text-gray-800">
           &larr; Back
         </a>
         <img src={astronaut.src} alt={title}
-             class="mx-auto h-32 w-32 flex-shrink-0 rounded-full">
-        <h3 class="mt-6 text-sm font-medium text-gray-900">{title}</h3>
-        <dl class="mt-1 flex flex-grow flex-col justify-between">
+             class="mx-auto h-32 w-32 rounded-full">
+        <h3 class="mt-6 font-medium text-sm text-gray-900">{title}</h3>
+        <dl class="mt-1">
           <dt class="sr-only">Description</dt>
           <dd class="text-sm text-gray-500">{description}</dd>
         </dl>
