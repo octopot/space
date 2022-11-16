@@ -1,10 +1,10 @@
 {
   "private": true,
   "dependencies": {
-    "@sentry/cli": "^2.23.1",
-    "@withgraphite/graphite-cli": "^1.0.13",
+    "@sentry/cli": "^2.25.0",
+    "@withgraphite/graphite-cli": "^1.0.14",
     "depcheck": "^1.4.7",
-    "vercel": "^33.0.1",
-    "wrangler": "^3.22.1"
+    "vercel": "^33.1.0",
+    "wrangler": "^3.22.4"
   }
 }
