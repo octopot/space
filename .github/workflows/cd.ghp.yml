@@ -61,7 +61,7 @@ jobs:
     steps:
       - name: Publish it to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2.0.4
+        uses: actions/deploy-pages@v2.0.5
 
   notify:
     name: Notifying
